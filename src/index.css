@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AI-Powered Student Attendance System Design System */
+
+@layer base {
+  :root {
+    /* Base colors - Clean, professional educational theme */
+    --background: 240 25% 97%;
+    --foreground: 215 25% 15%;
+
+    /* Card and surface colors */
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Deep ocean blue for trust and stability */
+    --primary: 217 91% 40%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 217 91% 35%;
+
+    /* Secondary - Soft blue-gray for subtle elements */
+    --secondary: 215 20% 93%;
+    --secondary-foreground: 215 25% 25%;
+
+    /* Muted colors for less important content */
+    --muted: 215 20% 93%;
+    --muted-foreground: 215 15% 55%;
+
+    /* Accent - Emerald for success, growth, attendance */
+    --accent: 158 64% 45%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 158 64% 40%;
+
+    /* Alert states */
+    --success: 158 64% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 43 96% 50%;
+    --warning-foreground: 43 96% 15%;
+    
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Interactive elements */
+    --border: 215 20% 88%;
+    --input: 215 20% 88%;
+    --ring: 217 91% 40%;
+
+    /* Gradients for modern feel */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 40%), hsl(217 91% 50%));
+    --gradient-accent: linear-gradient(135deg, hsl(158 64% 45%), hsl(158 64% 55%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 40%) 0%, hsl(158 64% 45%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(215 20% 98%) 100%);
+
+    /* Shadows for depth */
+    --shadow-sm: 0 2px 4px -1px hsl(215 25% 15% / 0.05);
+    --shadow-md: 0 4px 12px -2px hsl(215 25% 15% / 0.08);
+    --shadow-lg: 0 8px 24px -4px hsl(215 25% 15% / 0.12);
+    --shadow-colored: 0 8px 32px -8px hsl(217 91% 40% / 0.2);
+
+    /* Animation variables */
+    --transition-base: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark theme for educational system */
+    --background: 215 30% 8%;
+    --foreground: 215 15% 92%;
+
+    --card: 215 25% 12%;
+    --card-foreground: 215 15% 92%;
+
+    --popover: 215 25% 12%;
+    --popover-foreground: 215 15% 92%;
+
+    --primary: 217 91% 55%;
+    --primary-foreground: 215 30% 8%;
+    --primary-hover: 217 91% 50%;
+
+    --secondary: 215 20% 18%;
+    --secondary-foreground: 215 15% 85%;
+
+    --muted: 215 20% 18%;
+    --muted-foreground: 215 15% 65%;
+
+    --accent: 158 64% 50%;
+    --accent-foreground: 215 30% 8%;
+    --accent-hover: 158 64% 45%;
+
+    --success: 158 64% 50%;
+    --success-foreground: 215 30% 8%;
+    
+    --warning: 43 96% 60%;
+    --warning-foreground: 43 96% 15%;
+    
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 215 30% 8%;
+
+    --border: 215 20% 22%;
+    --input: 215 20% 22%;
+    --ring: 217 91% 55%;
+
+    /* Dark theme gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 45%), hsl(217 91% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(158 64% 40%), hsl(158 64% 50%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 45%) 0%, hsl(158 64% 45%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(215 25% 12%) 0%, hsl(215 20% 15%) 100%);
+
+    --sidebar-background: 215 30% 10%;
+    --sidebar-foreground: 215 15% 85%;
+    --sidebar-primary: 217 91% 55%;
+    --sidebar-primary-foreground: 215 30% 8%;
+    --sidebar-accent: 215 20% 18%;
+    --sidebar-accent-foreground: 215 15% 85%;
+    --sidebar-border: 215 20% 22%;
+    --sidebar-ring: 217 91% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
